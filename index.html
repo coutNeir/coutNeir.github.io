@@ -4,8 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Quiz</title>
-    <meta name="description" content="Math Quiz — practice arithmetic with timed, focus, and expert modes. Supports addition, subtraction, multiplication and division.">
+    
+    <!-- Primary Meta Tags -->
+    <title>Math Quiz — Practice Mental Arithmetic Online</title>
+    <meta name="title" content="Math Quiz — Practice Mental Arithmetic Online">
+    <meta name="description" content="Improve your calculation speed with timed, focus, and expert modes. Practice addition, subtraction, multiplication, and division.">
+    <link rel="canonical" href="https://coutneir.github.io">
+
+    <!-- Theme Color for Browser UI -->
+    <meta name="theme-color" content="#f0e8d0" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a0614" media="(prefers-color-scheme: dark)">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coutneir.github.io">
+    <meta property="og:title" content="Math Quiz — Practice Mental Arithmetic Online">
+    <meta property="og:description" content="Improve your calculation speed with timed, focus, and expert modes. Practice addition, subtraction, multiplication, and division.">
+    <meta property="og:image" content="https://coutneir.github.io/og_image.png">
+    <meta property="og:site_name" content="Math Quiz">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://coutneir.github.io">
+    <meta name="twitter:title" content="Math Quiz — Practice Mental Arithmetic Online">
+    <meta name="twitter:description" content="Improve your calculation speed with timed, focus, and expert modes. Practice addition, subtraction, multiplication, and division.">
+    <meta name="twitter:image" content="https://coutneir.github.io/og_image.png">
+
+    <!-- Favicon and App Manifest -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Math Quiz",
+      "description": "Practice arithmetic with timed, focus, and expert modes.",
+      "url": "https://coutneir.github.io",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires HTML5 support"
+    }
+    </script>
+
     <!-- Preconnect to reduce DNS + TLS latency for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +61,6 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap"></noscript>
     <!-- Preload the active border so LCP fires as early as possible -->
     <link rel="preload" id="border-preload" as="image" href="/light_border.webp" type="image/webp" fetchpriority="high">
-    <!-- Real favicon loaded from public directory -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <!-- Inline SVG sprite — replaces full Material Icons CDN (saves ~114KB) -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
         <symbol id="icon-settings" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94s-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96a7.01 7.01 0 0 0-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54a7.34 7.34 0 0 0-1.62.94l-2.39-.96a.47.47 0 0 0-.59.22L2.74 8.87a.47.47 0 0 0 .12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.36 1.04.67 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54a7.34 7.34 0 0 0 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.47.47 0 0 0-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></symbol>
@@ -27,12 +71,13 @@
     </svg>
     
 
-  <script type="module" crossorigin src="/assets/index-CF_zKW7q.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Qliq4AYa.css">
+  <script type="module" crossorigin src="/assets/index-C6cVgkMI.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-c28mdWOS.css">
 </head>
 
 <body>
     <main id="bgc" aria-label="Math Quiz">
+        <h1 class="sr-only">Math Quiz — Practice Mental Arithmetic Online</h1>
 
         <!-- Breathing glow overlay (focus mode) -->
         <div id="focus-glow" aria-hidden="true"></div>
@@ -159,7 +204,7 @@
 
         <!-- ── Screen 1: Select operations ───────────────────────────── -->
         <div class="screen active" id="screen-select" role="region" aria-labelledby="select-heading">
-            <h1 id="select-heading">Choose operations</h1>
+            <h2 id="select-heading">Choose operations</h2>
             <fieldset id="op-fieldset">
                 <legend>Select which operations to practice</legend>
                 <div id="op-grid">
@@ -266,7 +311,7 @@
         <!-- ── Screen 4: Focus summary ────────────────────────────────── -->
         <div class="screen" id="screen-focus-results" role="region" aria-labelledby="focus-results-heading">
             <div class="results-scroll">
-                <h1 id="focus-results-heading">Session summary</h1>
+                <h2 id="focus-results-heading">Session summary</h2>
                 <div id="focus-stat-row" role="group" aria-label="Session statistics">
                     <div class="focus-stat">
                         <output class="focus-stat-num" id="fs-correct" aria-label="Correct answers"></output>
