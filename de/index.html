@@ -87,8 +87,8 @@
     </svg>
     
 
-  <script type="module" crossorigin src="/assets/main-CNXgOM4j.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-DW6nX6oT.css">
+  <script type="module" crossorigin src="/assets/main-LUQCkJ1D.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main--TeECNw3.css">
 <link rel="manifest" href="/site.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
 
 <body>
@@ -424,9 +424,27 @@
       </div>
     </dialog>
 
-    <!-- Contact: shows the address as copyable text instead of a mailto -->
-    <button id="contact-link" type="button" title="Copy email"></button>
+    <!-- Footer Links -->
+    <div id="footer-links">
+      <button id="contact-link" class="footer-link" type="button" title="Copy email"></button>
+      <button id="privacy-link" class="footer-link" type="button">Privacy Policy</button>
+    </div>
 
+    <!-- Privacy Policy Panel -->
+    <dialog id="privacy-panel" aria-labelledby="privacy-title">
+      <div id="privacy-card">
+        <div id="privacy-header">
+          <h2 id="privacy-title">Privacy Policy</h2>
+          <button id="privacy-close" class="dialog-close-btn" aria-label="Close" type="button">&#x2715;</button>
+        </div>
+        <div id="privacy-body">
+          <p><strong>Responsible:</strong> The owner of this website (contact via the email provided on the site).</p>
+          <p><strong>Cookies:</strong> This site does not use tracking cookies.</p>
+          <p><strong>Hosting:</strong> Hosted on GitHub Pages, which may collect IP addresses for security purposes.</p>
+          <p><strong>Purpose:</strong> This project generates no income and is entirely free for everyone.</p>
+        </div>
+      </div>
+    </dialog>
     <!-- Help / Keyboard shortcuts button -->
     <button id="help-btn" aria-label="Keyboard shortcuts" aria-expanded="false" title="Keyboard shortcuts">?</button>
 
